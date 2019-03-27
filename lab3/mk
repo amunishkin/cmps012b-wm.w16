@@ -1,0 +1,5 @@
+#!/bin/sh
+# Authors: Alexey Munishkin (amunishk)
+#          Diem Phuong Chau (dhchau)
+# $Id: mk,v 1.1 2013-01-24 17:16:51-08 - - $
+gcc -g -O0 -Wall -Wextra -std=gnu99 crpn.c -o crpn

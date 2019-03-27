@@ -1,0 +1,13 @@
+Script  : /afs/cats.ucsc.edu/users/l/amunishk/12b/bin/runprogram.perl
+limit c :    0 max core file size (KB)
+limit f : 4194303 max output file size (KB)
+limit t : 4294967295 max CPU time (sec)
+stdin   : /dev/null
+stdout  : test4.out
+stderr  : test4.err
+log     : test4.log
+base    : test4
+Command : spellchk /foo /bar/baz quuux
+starting: pid 13667: 09:24:00.00
+finished: pid 13667: 09:24:00.00, real 0.00, user 0.32, sys 0.02
+pstatus: 0x0200 EXIT STATUS = 2

@@ -1,0 +1,182 @@
+Script started on Tue 12 Feb 2013 03:43:30 PM PST
+[?1034hbash-4.1$ mk lsi[K[Kist2.c
+CSOURCE=list2.c EXECBIN=list2
++ cid + list2.c
++ checksource list2.c
++ gcc -g -O0 -Wall -Wextra -std=gnu99 list2.c -o list2 -lm
+list2.c: In function ‘main’:
+list2.c:13: warning: unused parameter ‘argc’
++ set +x
+============================================================
+bash-4.1$ valgrind list2 foo bar
+==5195== Memcheck, a memory error detector
+==5195== Copyright (C) 2002-2010, and GNU GPL'd, by Julian Seward et al.
+==5195== Using Valgrind-3.6.0 and LibVEX; rerun with -h for copyright info
+==5195== Command: list2 foo bar
+==5195== 
+0x4c23180->node {word=0x7ff0002b1->[ORBIT_SOCKETDIR=/tmp/orbit-amunishk], link=0x4c23130}
+0x4c23130->node {word=(nil)->[(null)], link=0x4c230e0}
+0x4c230e0->node {word=0x7ff0002ad->[bar], link=0x4c23090}
+0x4c23090->node {word=0x7ff0002a9->[foo], link=0x4c23040}
+==5195== Conditional jump or move depends on uninitialised value(s)
+==5195==    at 0x400663: main (list2.c:22)
+==5195== 
+==5195== Conditional jump or move depends on uninitialised value(s)
+==5195==    at 0x35522462AF: vfprintf (vfprintf.c:1595)
+==5195==    by 0x355224EA29: printf (printf.c:35)
+==5195==    by 0x40064B: main (list2.c:23)
+==5195== 
+==5195== Use of uninitialised value of size 8
+==5195==    at 0x3552243761: _itoa_word (_itoa.c:196)
+==5195==    by 0x3552246367: vfprintf (vfprintf.c:1595)
+==5195==    by 0x355224EA29: printf (printf.c:35)
+==5195==    by 0x40064B: main (list2.c:23)
+==5195== 
+==5195== Conditional jump or move depends on uninitialised value(s)
+==5195==    at 0x3552243768: _itoa_word (_itoa.c:196)
+==5195==    by 0x3552246367: vfprintf (vfprintf.c:1595)
+==5195==    by 0x355224EA29: printf (printf.c:35)
+==5195==    by 0x40064B: main (list2.c:23)
+==5195== 
+==5195== Conditional jump or move depends on uninitialised value(s)
+==5195==    at 0x35522463C3: vfprintf (vfprintf.c:1595)
+==5195==    by 0x355224EA29: printf (printf.c:35)
+==5195==    by 0x40064B: main (list2.c:23)
+==5195== 
+==5195== Conditional jump or move depends on uninitialised value(s)
+==5195==    at 0x355224595D: vfprintf (vfprintf.c:1595)
+==5195==    by 0x355224EA29: printf (printf.c:35)
+==5195==    by 0x40064B: main (list2.c:23)
+==5195== 
+==5195== Conditional jump or move depends on uninitialised value(s)
+==5195==    at 0x35522459CE: vfprintf (vfprintf.c:1595)
+==5195==    by 0x355224EA29: printf (printf.c:35)
+==5195==    by 0x40064B: main (list2.c:23)
+==5195== 
+0x4c23040->node {word=0x7ff0002a3->[list2], link=0x355220fb88}
+==5195== Use of uninitialised value of size 8
+==5195==    at 0x40065C: main (list2.c:22)
+==5195== 
+==5195== Use of uninitialised value of size 8
+==5195==    at 0x40061E: main (list2.c:23)
+==5195== 
+==5195== Use of uninitialised value of size 8
+==5195==    at 0x400626: main (list2.c:23)
+==5195== 
+==5195== Use of uninitialised value of size 8
+==5195==    at 0x40062D: main (list2.c:23)
+==5195== 
+==5195== Invalid read of size 1
+==5195==    at 0x355224757C: vfprintf (vfprintf.c:1596)
+==5195==    by 0x355224EA29: printf (printf.c:35)
+==5195==    by 0x40064B: main (list2.c:23)
+==5195==  Address 0xc0012000029d5 is not stack'd, malloc'd or (recently) free'd
+==5195== 
+==5195== 
+==5195== Process terminating with default action of signal 11 (SIGSEGV)
+==5195==  General Protection Fault
+==5195==    at 0x355224757C: vfprintf (vfprintf.c:1596)
+==5195==    by 0x355224EA29: printf (printf.c:35)
+==5195==    by 0x40064B: main (list2.c:23)
+0x355220fb88->node {word=0xc0012000029d5->[==5195== 
+==5195== HEAP SUMMARY:
+==5195==     in use at exit: 80 bytes in 5 blocks
+==5195==   total heap usage: 5 allocs, 0 frees, 80 bytes allocated
+==5195== 
+==5195== LEAK SUMMARY:
+==5195==    definitely lost: 0 bytes in 0 blocks
+==5195==    indirectly lost: 0 bytes in 0 blocks
+==5195==      possibly lost: 0 bytes in 0 blocks
+==5195==    still reachable: 80 bytes in 5 blocks
+==5195==         suppressed: 0 bytes in 0 blocks
+==5195== Rerun with --leak-check=full to see details of leaked memory
+==5195== 
+==5195== For counts of detected and suppressed errors, rerun with: -v
+==5195== Use --track-origins=yes to see where uninitialised values come from
+==5195== ERROR SUMMARY: 54 errors from 12 contexts (suppressed: 6 from 6)
+Segmentation fault (core dumped)
+bash-4.1$ gdb list2
+[?1034hGNU gdb (GDB) Red Hat Enterprise Linux (7.2-50.el6)
+Copyright (C) 2010 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /afs/cats.ucsc.edu/users/l/amunishk/private/cmps012b/lab5/list2...done.
+(gdb) run foo bar
+Starting program: /afs/cats.ucsc.edu/users/l/amunishk/private/cmps012b/lab5/list2 foo bar
+0x601090->node {word=0x7fffffffe2eb->[ORBIT_SOCKETDIR=/tmp/orbit-amunishk], link=0x601070}
+0x601070->node {word=(nil)->[(null)], link=0x601050}
+0x601050->node {word=0x7fffffffe2e7->[bar], link=0x601030}
+0x601030->node {word=0x7fffffffe2e3->[foo], link=0x601010}
+0x601010->node {word=0x7fffffffe2a3->[/afs/cats.ucsc.edu/users/l/amunishk/private/cmps012b/lab5/list2], link=0x355220fb88}
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000000355224757c in _IO_vfprintf_internal (s=<value optimized out>, 
+    format=<value optimized out>, ap=<value optimized out>) at vfprintf.c:1596
+1596		  process_string_arg (((struct printf_spec *) NULL));
+(gdb) where
+#0  0x000000355224757c in _IO_vfprintf_internal (s=<value optimized out>, 
+    format=<value optimized out>, ap=<value optimized out>) at vfprintf.c:1596
+#1  0x000000355224ea2a in __printf (format=<value optimized out>) at printf.c:35
+#2  0x000000000040064c in main (argc=3, argv=0x7fffffffdf68) at list2.c:23
+(gdb) list
+1591	
+1592	      /* Process current format.  */
+1593	      while (1)
+1594		{
+1595		  process_arg (((struct printf_spec *) NULL));
+1596		  process_string_arg (((struct printf_spec *) NULL));
+1597	
+1598		LABEL (form_unknown):
+1599		  if (spec == L_('\0'))
+1600		    {
+(gdb) list list2.c:23
+18	      node->word = argv[argi];
+19	      node->link = head;
+20	      head = node;
+21	   }
+22	   for (node *curr = head; curr->link != NULL; curr = curr->link) {
+23	      printf ("%p->node {word=%p->[%s], link=%p}\n",
+24	              curr, curr->word, curr->word, curr->link);
+25	   }
+26	   return 9;
+27	}
+(gdb) print head
+No symbol "head" in current context.
+(gdb) bt
+#0  0x000000355224757c in _IO_vfprintf_internal (s=<value optimized out>, 
+    format=<value optimized out>, ap=<value optimized out>) at vfprintf.c:1596
+#1  0x000000355224ea2a in __printf (format=<value optimized out>) at printf.c:35
+#2  0x000000000040064c in main (argc=3, argv=0x7fffffffdf68) at list2.c:23
+(gdb) up [K
+#1  0x000000355224ea2a in __printf (format=<value optimized out>) at printf.c:35
+35	  done = vfprintf (stdout, format, arg);
+(gdb) 
+#2  0x000000000040064c in main (argc=3, argv=0x7fffffffdf68) at list2.c:23
+23	      printf ("%p->node {word=%p->[%s], link=%p}\n",
+(gdb) 
+Initial frame selected; you cannot go up.
+(gdb) print head
+$1 = (node *) 0x601090
+(gdb) print *head
+$2 = {word = 0x7fffffffe2eb "ORBIT_SOCKETDIR=/tmp/orbit-amunishk", link = 0x601070}
+(gdb) print *(ha[Kead->word)
+$3 = 79 'O'
+(gdb) print head->link->link->link
+$4 = (node *) 0x601030
+(gdb) print *(head->head->link[1Pead->link[1Pad->link[1Pd->link[1P->linkl->linki->linkn->linkk->link[C[C[C[C[C[C->link-[K)
+$5 = {word = 0x7fffffffe2e3 "foo", link = 0x601010}
+(gdb) quit
+A debugging session is active.
+
+	Inferior 1 [process 5300] will be killed.
+
+Quit anyway? (y or n) y
+bash-4.1$ exit
+exit
+
+Script done on Tue 12 Feb 2013 03:48:10 PM PST

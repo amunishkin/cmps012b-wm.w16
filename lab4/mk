@@ -1,0 +1,5 @@
+#!/bin/sh
+# Authors: Alexey Munishkin (amunishk)
+#          Diem Phuong Chau (dhchau)
+# $Id: mk,v 1.1 2013-02-05 19:08:18-08 - - $
+gcc -g -O0 -Wall -Wextra -std=gnu99 cmatch.c -o cmatch

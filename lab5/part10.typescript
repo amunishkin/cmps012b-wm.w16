@@ -1,0 +1,60 @@
+Script started on Tue 12 Feb 2013 06:04:27 PM PST
+]0;amunishk@be-linux30:lab5[amunishk@be-linux30 lab5]$ environ.c[K[K
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+COLORTERM=gnome-terminal
+autologout=180
+PATH=/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/texlive/2012/bin/x86_64-linux:/afs/cats.ucsc.edu/users/l/amunishk/bin:.
+USER=amunishk
+SSH_AUTH_SOCK=/tmp/keyring-waUW8e/socket.ssh
+EXELIS_DIR=/usr/local/envi
+QTDIR=/usr/lib64/qt-3.3
+SHELL=/bin/csh
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IRHd9Hnn1C,guid=fc6774da729d8d11d3857098000222dd
+GDM_LANG=en_US.UTF-8
+QTINC=/usr/lib64/qt-3.3/include
+GNOME_KEYRING_PID=32693
+VENDOR=unknown
+XDG_SESSION_COOKIE=4db7f382a064926b7b85d64c0000001e-1360710461.351382-873939544
+GDMSESSION=gnome
+IDL_DIR=/usr/local/envi/idl82
+GTK_RC_FILES=/etc/gtk/gtkrc:/afs/cats.ucsc.edu/users/l/amunishk/.gtkrc-1.2-gnome2
+HOST=be-linux30.ic.ucsc.edu
+MAIL=/var/spool/mail/amunishk
+AUTOLOGOUT=180
+XMODIFIERS=@im=none
+LANG=en_US.UTF-8
+WINDOWPATH=7
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:
+MACHTYPE=x86_64
+G_BROKEN_FILENAMES=1
+SHLVL=3
+GNOME_KEYRING_SOCKET=/tmp/keyring-waUW8e/socket
+WINDOWID=25165827
+IMSETTINGS_MODULE=none
+USERNAME=amunishk
+TERM=xterm
+PWD=/afs/cats.ucsc.edu/users/l/amunishk/private/cmps012b/lab5
+HOSTTYPE=x86_64-linux
+ORBIT_SOCKETDIR=/tmp/orbit-amunishk
+ENVI_DIR=/usr/local/envi/envi50
+HOSTNAME=be-linux30.ic.ucsc.edu
+IMSETTINGS_INTEGRATE_DESKTOP=yes
+INFOPATH=/usr/local/texlive/2012/texmf/doc/man
+KRB5CCNAME=FILE:/tmp/krb5cc_38687_eMVV4v
+GDM_KEYBOARD_LAYOUT=us
+QT_IM_MODULE=xim
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+DISPLAY=:0.0
+GROUP=users
+LOGNAME=amunishk
+OSTYPE=linux
+QTLIB=/usr/lib64/qt-3.3/lib
+DESKTOP_SESSION=gnome
+LESSOPEN=|/usr/bin/lesspipe.sh %s
+HOME=/afs/cats.ucsc.edu/users/l/amunishk
+XAUTHORITY=/var/run/gdm/auth-for-amunishk-vrJ1OI/database
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/322,unix/unix:/tmp/.ICE-unix/322
+]0;amunishk@be-linux30:lab5[amunishk@be-linux30 lab5]$ exit
+exit
+
+Script done on Tue 12 Feb 2013 06:04:45 PM PST

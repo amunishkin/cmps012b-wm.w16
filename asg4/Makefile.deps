@@ -1,0 +1,9 @@
+# Makefile.deps created Tue Feb 19 14:47:14 PST 2013
+# Authors: Alexey Munishkin (amunishk)
+#          Diem Phuong Chau (dhchau)
+
+debugf.o: debugf.c debugf.h
+stack.o: stack.c stack.h bigint.h
+bigint.o: bigint.c bigint.h
+token.o: token.c token.h debugf.h
+main.o: main.c bigint.h debugf.h stack.h token.h

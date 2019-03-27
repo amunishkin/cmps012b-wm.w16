@@ -1,0 +1,6 @@
+# Makefile.deps created Fri Feb 15 17:17:42 PST 2013
+# Authors: Alexey Munishkin (amunishk)
+#          Diem Phuong Chau (dhchau)
+
+main.o: main.c queue.h
+queue.o: queue.c queue.h

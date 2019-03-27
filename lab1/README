@@ -1,0 +1,8 @@
+name: Alexey Munishkin
+username: amunishk
+host: unix2.ic.ucsc.edu
+
+NOTE: hello.java is a copy from the lab#1 assignment from 
+/afs/cats.ucsc.edu/courses/cmps012b-wm/:/Labs-cmps012m/lab1u-gmake-rcs/lab1u-gmake-rcs.pdf
+
+Answer to Q5: The directory starts with a dot, making it invisible to browsers. 

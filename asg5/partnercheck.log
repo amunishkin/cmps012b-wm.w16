@@ -1,0 +1,7 @@
+partnercheck: ./PARTNER: format OK:
+user    = dhchau
+uid     = 21375
+gecos   = Diem Phuong Hoang Chau,,,,
+home    = /afs/cats.ucsc.edu/users/q/dhchau
+shell   = /bin/csh
+

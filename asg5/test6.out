@@ -1,0 +1,28 @@
+                  23 words in the hash set
+                 127 length of the hash array
+                  14 clusters of size 1
+                   3 clusters of size 2
+                   1 clusters of size 3
+array[         8] =   3058916928 "fooffoooofoo"
+array[        11] =      3083190 "dict"
+array[        18] =    293797881 "user.dict"
+array[        21] =   2170496442 "spelling"
+array[        25] =    113318569 "words"
+array[        38] =   3147082644 "test1.in"
+array[        39] =       116116 "usr"
+array[        42] =   2170490494 "spellchk"
+array[        47] =   3188794406 "letter"
+array[        51] =   3426816794 "tolled"
+array[        55] =    839444528 "marques"
+array[        56] =   3402586341 "steaks"
+array[        57] =   3147142226 "test3.in"
+array[        59] =   3804391866 "pleased"
+array[        64] =      3125534 "ever"
+array[        65] =   3000332139 "errors"
+array[        77] =         2363 "Id"
+array[        84] =    108407411 "revue"
+array[        95] =       104616 "its"
+array[       100] =   2448399064 "# $Id: user.dict,v 1.4 2013-03-11 12:56:16-07 - - $"
+array[       102] =     97205648 "misspelled"
+array[       105] =   3800931543 "plainly"
+array[       106] =    109413654 "shows"
